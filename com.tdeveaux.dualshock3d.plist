@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.tdeveaux.dualshock3d</string>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.iokit.matching</key>
+		<dict>
+			<key>com.apple.bluetooth.hostController</key>
+			<dict>
+				<key>VendorID</key>
+				<integer>1356</integer>
+				<key>ProductID</key>
+				<integer>616</integer>
+				<key>IOProviderClass</key>
+				<string>IOBluetoothL2CAPChannel</string>
+				<key>IOMatchLaunchStream</key>
+				<true/>
+			</dict>
+			<key>com.apple.usb.device</key>
+			<dict>
+				<key>idProduct</key>
+				<integer>616</integer>
+				<key>idVendor</key>
+				<integer>1356</integer>
+				<key>IOProviderClass</key>
+				<string>IOUSBDevice</string>
+				<key>IOMatchLaunchStream</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+	<key>Program</key>
+	<string>/usr/local/bin/dualshock3d</string>
+</dict>
+</plist>
